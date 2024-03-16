@@ -2,143 +2,347 @@
 @import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
 
 body {
-background-image:url('assets/garden1.png');
-background-size: cover;
-background-position: center;
-background-attachment: fixed;
-height: 100vh;
-display: grid;
-grid-template-rows: auto 1fr 200px;
+    background-image:url('assets/garden2.png');
+    background-size: cover;
+    background-repeat: repeat-y;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr 200px;
+}
+
+nav {
+    background-color: #003131;
+    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.15);
+    position: fixed;
+    width: 87%;
+    top: 0;
+    justify-content: space-between;
+    display: flex;
+    padding: 1.5% 10%;
+    z-index: 1000;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    transform: translateX(-50%);
+    left: 50%;
+}
+
+.logob {
+    display: flex;
+    align-items: left;
+    justify-content: left;
+}
+
+.logob img{
+    width: 143px;
+}
+
+.pesquisarnb {
+    background-color: #FFD9E3;
+    width: 620px;
+    height: 54px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    padding: 0% 1.5%;
+    justify-content: left;
+}
+
+        
+.lupab img {
+    display: block;  
+    margin-right: 20px;
+}
+        
+.pesquisarnpb h2{
+    color: #FD6288;
+    font-family: "Alata", sans-serif;
+    font-size: 20px;
+}
+
+.fotoperfilb img{
+    width: 74px;
+    position: absolute;
+    right: 9.5%;
+    transform: translate(-50%, -50%);
+}
+
+.settingsb{
+    align-self: flex-end;
 }
 
 header {
-width: 90%;
-justify-content: space-between;
-display: flex;
-padding: 5% 5%;
-}
-
-.settings {
-margin-left: auto;
-}
-
-.settings img{
-margin-right: 4px;
-width: 33px;
+    display: none;
 }
 
 .section-home {
-padding: 5% 0%;
+    padding: 10% 0%;
 }
-    
+        
 .logo img{
-display: flex;
-align-items: center;
-justify-content: center;
-width: 40%;
-margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 5%;
 }
-    
+        
 .nome {
-display: flex;
-align-items: center;
-justify-content: center;
-text-align: center;
-padding: 0% 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0% 27%;
 }
-    
+        
 .nome> h2{
-color: #ffffff;
-font-family: "Alata", sans-serif;
-font-size: 10px;
+    color: #ffffff;
+    font-family: "Alata", sans-serif;
+    font-size: 25px;
 }
 
 .section-novasplantas {
-background-color: #ffffff;
-border-top-left-radius: 15px;
-border-top-right-radius: 15px;
-width: 90%;
-margin: 0 auto;
-padding: 2% 2%;
+    background-color: #ffffff;
+    border-top-left-radius: 60px;
+    border-top-right-radius: 60px;
+    width: 85%;
+    margin: 0 auto;
+    padding: 2% 2%;
 }
-    
+        
 .pesquisarn {
-background-color: #FFD9E3;
-border-radius: 50px;
-display: flex;
-align-items: center;
-padding: 2% 5%;
-}
-    
-.lupa img {
-display: block;  
-margin-right: 10px;
-width: 60%;
-}
-    
-.pesquisarnp h2{
-color: #FD6288;
-font-family: "Alata", sans-serif;
-font-size: 15px;
-margin: 0;
+    display: none;
 }
 
 .novasplantas {
-display: grid;
-column-gap: 2%;
-grid-template-columns: 1fr 1fr;
-justify-items: center;
-align-items: center;
+    display: grid;
+    column-gap: 2%;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
 }
 
 .np {
-margin-top: 10%;
-margin-bottom: 10%;
+    margin-top: 10%;
+    margin-bottom: 10%;
 }
-    
+
+.npu {
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+        
 .capan img {
-width: 100%;
+    width: 100%;
+    margin-bottom: 15px;
 }
 
 .titulon {
-display: flex;
+    display: flex;
 }
 
 .coracaoc img{
-display: block;  
-margin-right: 7px;
-margin-left: 7px;
-margin-bottom: 7px;
-width: 16px;
+    display: block;  
+    margin-right: 15px;
+    margin-left: 10px;
+    margin-bottom: 7px;
 }
 
 .tplantan h3{
-color: #003128;
-font-family: "Fredoka", sans-serif;
-font-size: 12px;
-margin: 0;
+    color: #003128;
+    font-family: "Fredoka", sans-serif;
+    font-size: 25px;
+    margin: 0;
 }
 
+.footer-bottom {
+    padding: 0% 15%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .footer-bottom span{
+    color: #458C7F;
+    font-family: 'Space Grotesk', sans-serif;
+  }
+
+  .footer-bottom a{
+    color: #003128;
+    font-family: 'Space Grotesk', sans-serif;
+    text-decoration: none;
+  }
 
 menu{
-background-color: #ffffff;
-box-shadow: 0 5px 15px 0 #f45f84a6;
-width: 90%;
-padding: 2% 2%;
-align-items: center;
-justify-content: center;
-text-align: center;
-margin: 0 auto;
-height: 30%;
+    display: none;
 }
-    
-.icons {
-grid-template-columns: 1fr 1fr 1fr;
+
+
+/* responsividade para celular */
+@media screen and (min-width: 300px) and (max-width: 500px) {
+
+    body {
+    background-image:url('assets/garden1.png');
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr 200px;
+    }
+
+    nav {
+    display: none;
+    }
+
+    header {
+    width: 90%;
+    justify-content: space-between;
+    display: flex;
+    padding: 5% 5%;
+    }
+
+    .settings {
+    margin-left: auto;
+    }
+
+    .settings img{
+    margin-right: 4px;
+    width: 33px;
+    }
+
+    .section-home {
+    padding: 5% 0%;
+    }
+        
+    .logo img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    margin: 0 auto;
+    margin-top: 0px;
+    }
+        
+    .nome {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0% 20%;
+    }
+        
+    .nome> h2{
+    color: #ffffff;
+    font-family: "Alata", sans-serif;
+    font-size: 10px;
+    }
+
+    .section-novasplantas {
+    background-color: #ffffff;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    width: 90%;
+    margin: 0 auto;
+    padding: 2% 2%;
+    }
+        
+    .pesquisarn {
+    background-color: #FFD9E3;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    padding: 2% 5%;
+    }
+        
+    .lupa img {
+    display: block;  
+    margin-right: 10px;
+    width: 60%;
+    }
+        
+    .pesquisarnp h2{
+    color: #FD6288;
+    font-family: "Alata", sans-serif;
+    font-size: 15px;
+    margin: 0;
+    }
+
+    .novasplantas {
+    display: grid;
+    column-gap: 2%;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    }
+
+    .np {
+    margin-top: 10%;
+    margin-bottom: 10%;
+    }
+
+    .npu {
+    margin-top: 10%;
+    margin-bottom: 50%;
+    }
+        
+    .capan img {
+    width: 100%;
+    margin-bottom: 2px;
+    }
+
+    .titulon {
+    display: flex;
+    }
+
+    .coracaoc img{
+    display: block;  
+    margin-right: 7px;
+    margin-left: 7px;
+    margin-bottom: 7px;
+    width: 16px;
+    }
+
+    .tplantan h3{
+    color: #003128;
+    font-family: "Fredoka", sans-serif;
+    font-size: 12px;
+    margin: 0;
+    }
+
+.footer-bottom {
+    display: none;
 }
-    
-.icons img{
-margin-right: 7%;
-margin-left: 7%;
-margin-bottom: 1%;
-margin-top: 1%;
+
+
+    menu{
+    display: block;
+    background-color: #ffffff;
+    box-shadow: 0 5px 15px 0 #f45f84a6;
+    width: 90%;
+    padding: 2% 0%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+    position: fixed;
+    bottom: 0;
+    transform: translateX(-50%);
+    left: 50%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    }
+        
+    .icons {
+    grid-template-columns: 1fr 1fr 1fr;
+    }
+        
+    .icons img{
+    margin-right: 7%;
+    margin-left: 7%;
+    margin-bottom: 1%;
+    margin-top: 1%;
+    }
+
 }
