@@ -33,6 +33,7 @@ nav {
     display: flex;
     align-items: left;
     justify-content: left;
+    margin-right: 5%;
 }
 
 .logob img{
@@ -41,13 +42,13 @@ nav {
 
 .pesquisarnb {
     background-color: #FFD9E3;
-    width: 620px;
-    height: 54px;
+    width: 50%;
+    height: 20%;
     border-radius: 50px;
     display: flex;
     align-items: center;
     padding: 0% 1.5%;
-    justify-content: left;
+    margin: auto;
 }
 
         
@@ -62,11 +63,13 @@ nav {
     font-size: 20px;
 }
 
+.fotoperfilb {
+    margin-left: auto;
+    margin-right: 10px;
+}
+
 .fotoperfilb img{
     width: 74px;
-    position: absolute;
-    right: 9.5%;
-    transform: translate(-50%, -50%);
 }
 
 .settingsb{
@@ -285,6 +288,10 @@ header {
     }
 
     .section-suasplantas a{
+        display: none;
+    }
+
+    .section-suasplantas hr{
         display: none;
     }
 
