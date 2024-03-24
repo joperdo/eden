@@ -82,7 +82,13 @@ header {
 
 .section-home {
     padding: 10% 0%;
-    }
+    transition: opacity 0.5s ease;
+    opacity: 1;
+}
+
+.hidden {
+    opacity: 0;
+}
 
 .fotoperfil img{
     display: flex;
@@ -132,17 +138,11 @@ header {
     }
 
     .mp {
-    background-color: #ffffff;
-    box-shadow: 0px 0px 10px 0px #a8183ca6;
-    border-radius: 40px;
     margin-top: 10%;
     margin-bottom: 10%;
     }
 
     .mpu {
-    background-color: #ffffff;
-    box-shadow: 0px 0px 10px 0px #a8183ca6;
-    border-radius: 40px;
     margin-top: 10%;
     margin-bottom: 10%;
     }
@@ -331,17 +331,11 @@ header {
     }
 
     .mp {
-    background-color: #ffffff;
-    box-shadow: 0px 0px 7px 0px #a8183ca6;
-    border-radius: 20px;
     margin-top: 10%;
     margin-bottom: 10%;
     }
 
     .mpu {
-    background-color: #ffffff;
-    box-shadow: 0px 0px 7px 0px #a8183ca6;
-    border-radius: 20px;
     margin-top: 10%;
     margin-bottom: 60%;
     }
