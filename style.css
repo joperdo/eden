@@ -8,6 +8,9 @@ body {
     height: 100vh;
     display: grid;
     grid-template-rows: auto 1fr 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 nav {
@@ -366,12 +369,10 @@ menu{
     }
 
     .section-suasplantas {
-        width: 90%;
-        min-width: 300px;
-        max-width: 370px;
+        width: 360px;
         display: flex;
         margin: 0 auto;
-        margin-bottom: 2%;
+        margin-bottom: 5%;
         position: relative;
         justify-content: center;
         }
@@ -382,7 +383,7 @@ menu{
     
         .minhasplantas .image-list {
             display: grid;
-            gap: 2%;
+            gap: 1.5%;
             grid-template-columns: repeat(10, 1fr);
             font-size: 0;
             overflow: none;
