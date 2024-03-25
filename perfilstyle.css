@@ -8,9 +8,6 @@ body {
     height: 100vh;
     display: grid;
     grid-template-rows: auto 1fr 200px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 nav {
@@ -229,12 +226,15 @@ header {
 @media screen and (min-width: 300px) and (max-width: 500px) {
 
     body {
-    background-image:url('assets/garden1.png');
-    background-size: cover;
-    background-attachment: fixed;
-    height: 100vh;
-    display: grid;
-    grid-template-rows: auto 1fr 200px;
+        background-image:url('assets/garden2.png');
+        background-size: cover;
+        background-repeat: repeat-y;
+        height: 100vh;
+        display: grid;
+        grid-template-rows: auto 1fr 200px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     nav {
