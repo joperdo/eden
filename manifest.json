@@ -1,5 +1,5 @@
 {
-  "background_color": "#fd6288",
+  "background_color": "#003131",
   "dir": "ltr",
   "display": "standalone",
   "name": "Eden",
@@ -571,7 +571,7 @@
       }
   ],
   "start_url": "/",
-  "theme_color": "#fd6288",
+  "theme_color": "#003131",
   "description": "Eden é um lugar para aqueles que estão começando a cultivar seu jardim. Encontrando informações sobre as necessidades de cada planta.",
   "lang": "pt",
   "categories": [
