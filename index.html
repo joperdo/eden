@@ -6,20 +6,14 @@
     <title>Eden</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0">
     <link rel="manifest" href="manifest.json" />
-    <script>
-        if (typeof navigator.serviceWorker !== 'undefined') {
-            navigator.serviceWorker.register('pwabuilder-sw.js')
-        }
-    </script>
 </head>
 
 <body>
 
     <nav>
         <div class="logob">
-            <a href="index.html"><img src="assets/logo.png"></a>
+            <a href="home.html"><img src="assets/logo.png"></a>
         </div>
 
         <div class="pesquisarnb">
@@ -31,7 +25,7 @@
             </div>
         </div>
         <div class="fotoperfilb">
-            <a href="perfil.html"><img src="assets/fotodeperfil.png"></a>
+            <a href="index.html"><img src="assets/fotodeperfil.png"></a>
         </div>
         <div class="settingsb">
             <img src="assets/settings.png">
@@ -39,6 +33,9 @@
     </nav>
 
     <header>
+        <div class="logo">
+            <a href="home.html"><img src="assets/logo.png"></a>
+        </div>
         <div class="settings">
             <img src="assets/settings.png">
         </div>
@@ -47,409 +44,232 @@
     <main>
 
         <section id="home" class="section section-home">
-            <div class="logo">
-                <img src="assets/logo.png">
+            <div class="fotoperfil">
+                <img src="assets/fotodeperfil.png">
             </div>
             <div class="nome">
-                <h2>Se você está começando a cultivar seu jardim, no Eden cuidar das suas plantas fica mais fácil!<br/>
-                    Aqui você encontrará informações sobre as necessidades de cada planta ♡</h2>
+                <h1>Melina</h1>
             </div>
 
         </section>
 
         <section id="suasplantas" class="section section-suasplantas">
-            <div class="minhasplantas">
-                    <button id="prev-slide" class="slide-button material-symbols-rounded">chevron_left</button>
-                <div class="image-list">
-                    <div class="mp">
-                        <div class="capa">
-                            <div class="capaimg">
-                            <img src="assets/morango.png">
-                            </div>
-                            <div class="coracaov">
-                            <img src="assets/corev.png">
-                            </div>
-                        </div>
-                        <div class="titulo">
-                            <div class="iplanta">
-                                <img src="assets/planta.png">
-                            </div>
-                            <div class="tplanta">
-                                <h3>Morangueiro</h3>
-                            </div>
-                        </div>
-                        <div class="infos">
-                            <div class="icones">
-                                <img src="assets/sol.png">
-                            </div>
-                            <div class="infosp">
-                                <h4>Luz solar direta</h4>
-                            </div>
-                        </div>
-                        <div class="infos">
-                            <div class="icones">
-                                <img src="assets/gota.png">
-                            </div>
-                            <div class="infosp">
-                                <h4>Uma vez ao dia</h4>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="mp">
-                        <div class="capa">
-                            <div class="capaimg">
-                            <img src="assets/dancarina.png">
-                            </div>
-                            <div class="coracaov">
-                            <img src="assets/corev.png">
-                            </div>
-                        </div>
-                        <div class="titulo">
-                            <div class="iplanta">
-                                <img src="assets/planta.png">
-                            </div>
-                            <div class="tplanta">
-                                <h3>Menina Dançarina</h3>
-                            </div>
-                        </div>
-                        <div class="infos">
-                            <div class="icones">
-                                <img src="assets/sol.png">
-                            </div>
-                            <div class="infosp">
-                                <h4>Luz solar indireta</h4>
-                            </div>
-                        </div>
-                        <div class="infos">
-                            <div class="icones">
-                                <img src="assets/gota.png">
-                            </div>
-                            <div class="infosp">
-                                <h4>Uma vez ao dia</h4>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="mp">
-                        <div class="capa">
-                            <div class="capaimg">
-                            <img src="assets/ovo.png">
-                            </div>
-                            <div class="coracaov">
-                            <img src="assets/corev.png">
-                            </div>
-                        </div>
-                        <div class="titulo">
-                            <div class="iplanta">
-                                <img src="assets/planta.png">
-                            </div>
-                            <div class="tplanta">
-                                <h3>Planta Ovo</h3>
-                            </div>
-                        </div>
-                        <div class="infos">
-                            <div class="icones">
-                                <img src="assets/sol.png">
-                            </div>
-                            <div class="infosp">
-                                <h4>Luz solar direta</h4>
-                            </div>
-                        </div>
-                        <div class="infos">
-                            <div class="icones">
-                                <img src="assets/gota.png">
-                            </div>
-                            <div class="infosp">
-                                <h4>Uma vez ao dia</h4>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="mp">
-                        <div class="capa">
-                            <div class="capaimg">
-                            <img src="assets/rosa.png">
-                            </div>
-                            <div class="coracaov">
-                            <img src="assets/corev.png">
-                            </div>
-                        </div>
-                        <div class="titulo">
-                            <div class="iplanta">
-                                <img src="assets/planta.png">
-                            </div>
-                            <div class="tplanta">
-                                <h3>Princesa Rosa</h3>
-                            </div>
-                        </div>
-                        <div class="infos">
-                            <div class="icones">
-                                <img src="assets/sol.png">
-                            </div>
-                            <div class="infosp">
-                                <h4>Luz solar indireta</h4>
-                            </div>
-                        </div>
-                        <div class="infos">
-                            <div class="icones">
-                                <img src="assets/gota.png">
-                            </div>
-                            <div class="infosp">
-                                <h4>Uma vez ao dia</h4>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="mp">
-                        <div class="capa">
-                            <div class="capaimg">
-                            <img src="assets/bela.png">
-                            </div>
-                            <div class="coracaov">
-                            <img src="assets/corev.png">
-                            </div>
-                        </div>
-                        <div class="titulo">
-                            <div class="iplanta">
-                                <img src="assets/planta.png">
-                            </div>
-                            <div class="tplanta">
-                                <h3>Beladona</h3>
-                            </div>
-                        </div>
-                        <div class="infos">
-                            <div class="icones">
-                                <img src="assets/sol.png">
-                            </div>
-                            <div class="infosp">
-                                <h4>Luz solar direta</h4>
-                            </div>
-                        </div>
-                        <div class="infos">
-                            <div class="icones">
-                                <img src="assets/gota.png">
-                            </div>
-                            <div class="infosp">
-                                <h4>Duas vezes por semana</h4>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="mp">
-                        <div class="capa">
-                            <div class="capaimg">
-                            <img src="assets/leao.png">
-                            </div>
-                            <div class="coracaov">
-                            <img src="assets/corev.png">
-                            </div>
-                        </div>
-                        <div class="titulo">
-                            <div class="iplanta">
-                                <img src="assets/planta.png">
-                            </div>
-                            <div class="tplanta">
-                                <h3>Boca-de-leão</h3>
-                            </div>
-                        </div>
-                        <div class="infos">
-                            <div class="icones">
-                                <img src="assets/sol.png">
-                            </div>
-                            <div class="infosp">
-                                <h4>Luz solar indireta</h4>
-                            </div>
-                        </div>
-                        <div class="infos">
-                            <div class="icones">
-                                <img src="assets/gota.png">
-                            </div>
-                            <div class="infosp">
-                                <h4>Uma vez ao dia</h4>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                 <button id="next-slide" class="slide-button material-symbols-rounded">chevron_right</button>
-
-            </div>
-
-        </section>
-
-        <section id="novasplantas" class="section section-novasplantas">
-            <div class="pesquisarn">
+            <a href=""><img src="assets/add.png"></a>
+            <hr>
+            <div class="pesquisar">
                     <div class="lupa">
                         <img src="assets/lupa.png">
                     </div>
-                    <div class="pesquisarnp">
-                        <h2>Pesquise novas plantas</h2>  
+                    <div class="pesquisarsp">
+                        <h2>Pesquise suas plantas</h2>  
                     </div>
             </div>
-            <div class="novasplantas">
-                <div class="np">
-                    <div class="capan">
-                        <img src="assets/dioneia.png">
-                    </div>
-                    <div class="titulon">
-                        <div class="coracaoc">
-                            <img src="assets/corec.png">
-                            </div>
-                        <div class="tplantan">
-                            <h3>Dioneia</h3>
+            <div class="minhasplantas">
+                <div class="mp">
+                    <div class="capa">
+                        <div class="capaimg">
+                        <img src="assets/morango.png">
+                        </div>
+                        <div class="coracaov">
+                        <img src="assets/corev.png">
                         </div>
                     </div>
-                </div>
+                    <div class="titulo">
+                        <div class="iplanta">
+                            <img src="assets/planta.png">
+                        </div>
+                        <div class="tplanta">
+                            <h3>Morangueiro</h3>
+                        </div>
+                    </div>
+                    <div class="infos">
+                        <div class="icones">
+                            <img src="assets/sol.png">
+                        </div>
+                        <div class="infosp">
+                            <h4>Luz solar direta</h4>
+                        </div>
+                    </div>
+                    <div class="infos">
+                        <div class="icones">
+                            <img src="assets/gota.png">
+                        </div>
+                        <div class="infosp">
+                            <h4>Uma vez ao dia</h4>
+                        </div>
+                    </div>
+                 </div>
+                 <div class="mp">
+                    <div class="capa">
+                        <div class="capaimg">
+                        <img src="assets/dancarina.png">
+                        </div>
+                        <div class="coracaov">
+                        <img src="assets/corev.png">
+                        </div>
+                    </div>
+                    <div class="titulo">
+                        <div class="iplanta">
+                            <img src="assets/planta.png">
+                        </div>
+                        <div class="tplanta">
+                            <h3>Menina Dançarina</h3>
+                        </div>
+                    </div>
+                    <div class="infos">
+                        <div class="icones">
+                            <img src="assets/sol.png">
+                        </div>
+                        <div class="infosp">
+                            <h4>Luz solar indireta</h4>
+                        </div>
+                    </div>
+                    <div class="infos">
+                        <div class="icones">
+                            <img src="assets/gota.png">
+                        </div>
+                        <div class="infosp">
+                            <h4>Uma vez ao dia</h4>
+                        </div>
+                    </div>
+                 </div>
+                 <div class="mp">
+                    <div class="capa">
+                        <div class="capaimg">
+                        <img src="assets/ovo.png">
+                        </div>
+                        <div class="coracaov">
+                        <img src="assets/corev.png">
+                        </div>
+                    </div>
+                    <div class="titulo">
+                        <div class="iplanta">
+                            <img src="assets/planta.png">
+                        </div>
+                        <div class="tplanta">
+                            <h3>Planta Ovo</h3>
+                        </div>
+                    </div>
+                    <div class="infos">
+                        <div class="icones">
+                            <img src="assets/sol.png">
+                        </div>
+                        <div class="infosp">
+                            <h4>Luz solar direta</h4>
+                        </div>
+                    </div>
+                    <div class="infos">
+                        <div class="icones">
+                            <img src="assets/gota.png">
+                        </div>
+                        <div class="infosp">
+                            <h4>Uma vez ao dia</h4>
+                        </div>
+                    </div>
+                 </div>
+                 <div class="mp">
+                    <div class="capa">
+                        <div class="capaimg">
+                        <img src="assets/rosa.png">
+                        </div>
+                        <div class="coracaov">
+                        <img src="assets/corev.png">
+                        </div>
+                    </div>
+                    <div class="titulo">
+                        <div class="iplanta">
+                            <img src="assets/planta.png">
+                        </div>
+                        <div class="tplanta">
+                            <h3>Princesa Rosa</h3>
+                        </div>
+                    </div>
+                    <div class="infos">
+                        <div class="icones">
+                            <img src="assets/sol.png">
+                        </div>
+                        <div class="infosp">
+                            <h4>Luz solar indireta</h4>
+                        </div>
+                    </div>
+                    <div class="infos">
+                        <div class="icones">
+                            <img src="assets/gota.png">
+                        </div>
+                        <div class="infosp">
+                            <h4>Uma vez ao dia</h4>
+                        </div>
+                    </div>
+                 </div>
+                 <div class="mpu">
+                    <div class="capa">
+                        <div class="capaimg">
+                        <img src="assets/bela.png">
+                        </div>
+                        <div class="coracaov">
+                        <img src="assets/corev.png">
+                        </div>
+                    </div>
+                    <div class="titulo">
+                        <div class="iplanta">
+                            <img src="assets/planta.png">
+                        </div>
+                        <div class="tplanta">
+                            <h3>Beladona</h3>
+                        </div>
+                    </div>
+                    <div class="infos">
+                        <div class="icones">
+                            <img src="assets/sol.png">
+                        </div>
+                        <div class="infosp">
+                            <h4>Luz solar direta</h4>
+                        </div>
+                    </div>
+                    <div class="infos">
+                        <div class="icones">
+                            <img src="assets/gota.png">
+                        </div>
+                        <div class="infosp">
+                            <h4>Duas vezes por semana</h4>
+                        </div>
+                    </div>
+                 </div>
+                 <div class="mpu">
+                    <div class="capa">
+                        <div class="capaimg">
+                        <img src="assets/leao.png">
+                        </div>
+                        <div class="coracaov">
+                        <img src="assets/corev.png">
+                        </div>
+                    </div>
+                    <div class="titulo">
+                        <div class="iplanta">
+                            <img src="assets/planta.png">
+                        </div>
+                        <div class="tplanta">
+                            <h3>Boca-de-leão</h3>
+                        </div>
+                    </div>
+                    <div class="infos">
+                        <div class="icones">
+                            <img src="assets/sol.png">
+                        </div>
+                        <div class="infosp">
+                            <h4>Luz solar indireta</h4>
+                        </div>
+                    </div>
+                    <div class="infos">
+                        <div class="icones">
+                            <img src="assets/gota.png">
+                        </div>
+                        <div class="infosp">
+                            <h4>Uma vez ao dia</h4>
+                        </div>
+                    </div>
+                 </div>
 
-                <div class="np">
-                    <div class="capan">
-                        <img src="assets/pato.png">
-                    </div>
-                    <div class="titulon">
-                        <div class="coracaoc">
-                            <img src="assets/corec.png">
-                            </div>
-                        <div class="tplantan">
-                            <h3>Pato Voador</h3>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="np">
-                    <div class="capan">
-                        <img src="assets/homi.png">
-                    </div>
-                    <div class="titulon">
-                        <div class="coracaoc">
-                            <img src="assets/corec.png">
-                            </div>
-                        <div class="tplantan">
-                            <h3>Orquídea Homens nus</h3>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="np">
-                    <div class="capan">
-                        <img src="assets/shrek.png">
-                    </div>
-                    <div class="titulon">
-                        <div class="coracaoc">
-                            <img src="assets/corec.png">
-                            </div>
-                        <div class="tplantan">
-                            <h3>Orelha de Shrek</h3>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="np">
-                    <div class="capan">
-                        <img src="assets/alien.png">
-                    </div>
-                    <div class="titulon">
-                        <div class="coracaoc">
-                            <img src="assets/corec.png">
-                            </div>
-                        <div class="tplantan">
-                            <h3>Orquídea alienígena</h3>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="np">
-                    <div class="capan">
-                        <img src="assets/bezu.png">
-                    </div>
-                    <div class="titulon">
-                        <div class="coracaoc">
-                            <img src="assets/corec.png">
-                            </div>
-                        <div class="tplantan">
-                            <h3>Flor-do-beijo</h3>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="np">
-                    <div class="capan">
-                        <img src="assets/rabo.png">
-                    </div>
-                    <div class="titulon">
-                        <div class="coracaoc">
-                            <img src="assets/corec.png">
-                            </div>
-                        <div class="tplantan">
-                            <h3>Rabo de Macaco</h3>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="np">
-                    <div class="capan">
-                        <img src="assets/cara.png">
-                    </div>
-                    <div class="titulon">
-                        <div class="coracaoc">
-                            <img src="assets/corec.png">
-                            </div>
-                        <div class="tplantan">
-                            <h3>Cara de Macaco</h3>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="np">
-                    <div class="capan">
-                        <img src="assets/abelha.png">
-                    </div>
-                    <div class="titulon">
-                        <div class="coracaoc">
-                            <img src="assets/corec.png">
-                            </div>
-                        <div class="tplantan">
-                            <h3>Orquídea Abelha</h3>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="np">
-                    <div class="capan">
-                        <img src="assets/bebe.png">
-                    </div>
-                    <div class="titulon">
-                        <div class="coracaoc">
-                            <img src="assets/corec.png">
-                            </div>
-                        <div class="tplantan">
-                            <h3>Bebê-no-Berço</h3>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="npu">
-                    <div class="capan">
-                        <img src="assets/pombo.png">
-                    </div>
-                    <div class="titulon">
-                        <div class="coracaoc">
-                            <img src="assets/corec.png">
-                            </div>
-                        <div class="tplantan">
-                            <h3>Orquídea-pombo</h3>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="npu">
-                    <div class="capan">
-                        <img src="assets/darth.png">
-                    </div>
-                    <div class="titulon">
-                        <div class="coracaoc">
-                            <img src="assets/corec.png">
-                            </div>
-                        <div class="tplantan">
-                            <h3>Orquídea Darth Vader</h3>
-                        </div>
-                    </div>
-                </div>
 
             </div>
 
@@ -462,8 +282,8 @@
                         </a>
                     </span>
                 </div>
-            </div>
 
+            </div>
             
 
         </section>
@@ -472,13 +292,29 @@
 
     <menu>
         <div class="icons">
-            <a href="index.html"><img src="assets/home.png"></a>
+            <a href="home.html"><img src="assets/home.png"></a>
             <a href=""><img src="assets/add.png"></a>
-            <a href="perfil.html"><img src="assets/perfil.png"></a>
+            <a href="index.html"><img src="assets/perfil.png"></a>
             </div>
-    </menu>
+        </menu>
 
         
+    <script>
+        let newWorker;
+        if ('serviceWorker' in navigator) {
+          navigator.serviceWorker.register('/service-worker.js').then(reg => {
+            reg.addEventListener('updatefound', () => {
+              newWorker = reg.installing;
+            });
+          });
+          let refreshing;
+          navigator.serviceWorker.addEventListener('controllerchange', function () {
+            if (refreshing) return;
+            window.location.reload();
+            refreshing = true;
+          });
+        }
+      </script>
 
 </body>
 

@@ -1,0 +1,570 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+
+body {
+    background-image:url('assets/garden2.png');
+    background-size: cover;
+    background-repeat: repeat-y;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr 200px;
+}
+
+nav {
+    background-color: #003131;
+    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.15);
+    position: fixed;
+    width: 87%;
+    top: 0;
+    justify-content: space-between;
+    display: flex;
+    padding: 1.5% 10%;
+    z-index: 1000;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    transform: translateX(-50%);
+    left: 50%;
+}
+
+.logob {
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    margin-right: 5%;
+}
+
+.logob img{
+    width: 143px;
+}
+
+.pesquisarnb {
+    background-color: #FFD9E3;
+    width: 50%;
+    height: 20%;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    padding: 0% 1.5%;
+    margin: auto;
+}
+
+        
+.lupab img {
+    display: block;  
+    margin-right: 20px;
+}
+        
+.pesquisarnpb h2{
+    color: #FD6288;
+    font-family: "Alata", sans-serif;
+    font-size: 20px;
+}
+
+.fotoperfilb {
+    margin-left: auto;
+    margin-right: 10px;
+}
+
+.fotoperfilb img{
+    width: 74px;
+}
+
+.settingsb{
+    align-self: flex-end;
+}
+
+header {
+    display: none;
+}
+
+.section-home {
+    padding: 10% 0%;
+    transition: opacity 0.5s ease;
+    opacity: 1;
+}
+
+.hidden {
+    opacity: 0;
+}
+        
+.logo img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 5%;
+}
+        
+.nome {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0% 27%;
+}
+        
+.nome> h2{
+    color: #ffffff;
+    font-family: "Alata", sans-serif;
+    font-size: 25px;
+}
+
+.section-suasplantas {
+    width: 87%;
+    display: flex;
+    margin: 0 auto;
+    margin-bottom: 2%;
+    position: relative;
+    justify-content: center;
+    }
+
+    .minhasplantas {
+        overflow: auto;
+    }
+
+    .minhasplantas .image-list {
+        display: grid;
+        gap: 1%;
+        grid-template-columns: repeat(10, 1fr);
+        font-size: 0;
+        overflow: auto;
+        scrollbar-width: none;
+        margin: 0 auto;
+    }
+
+    .minhasplantas .image-list::-webkit-scrollbar {
+        display: none;
+    }
+
+    .minhasplantas .slide-button {
+        top: 50%;
+        height: 45px;
+        width: 45px;
+        color: #FD6288;
+        background: #FFD9E3;
+        font-size: 2.2rem;
+        cursor: pointer;
+        border: none;
+        outline: none;
+        position: absolute;
+        border-radius: 50%;
+        transform: translateY(-50%);
+    }
+
+    .minhasplantas .slide-button:hover {
+        background: #458C7F;
+    }
+
+    .minhasplantas .slide-button#prev-slide {
+        left: -70px;
+    }
+
+    .minhasplantas .slide-button#next-slide {
+        right: -70px;
+    }
+
+    .mp {
+        background-color: #ffffff;
+        border-radius: 25px;
+        width: 222px;
+        height: 270px;
+    }
+
+
+    .capa {
+    position: relative;
+    overflow: hidden;
+    }
+
+    .capaimg img {
+    width: 222px;
+    margin-bottom: 10px;
+    }
+
+    .coracaov img{
+    position: absolute;
+    bottom: 10%;
+    left: 4%;
+    width: 27px;
+    }
+
+    .titulo {
+    display: flex;
+    }
+
+    .iplanta img{
+    display: block;  
+    margin-right: 7px;
+    margin-left: 7px;
+    margin-bottom: 7px;
+    width: 27px;
+    }
+
+    .tplanta h3{
+    color: #003128;
+    font-family: "Fredoka", sans-serif;
+    font-size: 15px;
+    margin: 0;
+    }
+
+    .infos {
+    display: flex;
+    }
+
+    .icones img{
+    display: block;  
+    margin-right: 7px;
+    margin-left: 7px;
+    margin-bottom: 7px;
+    width: 27px;
+    }
+
+    .infosp h4{
+    color: #116152;
+    font-family: "Alata", sans-serif;
+    font-size: 12px;
+    margin: 0;
+    }
+
+.section-novasplantas {
+    background-color: #ffffff;
+    border-top-left-radius: 60px;
+    border-top-right-radius: 60px;
+    width: 85%;
+    margin: 0 auto;
+    padding: 2% 2%;
+}
+        
+.pesquisarn {
+    display: none;
+}
+
+.novasplantas {
+    display: grid;
+    column-gap: 2%;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+}
+
+.np {
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+.npu {
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+        
+.capan img {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.titulon {
+    display: flex;
+}
+
+.coracaoc img{
+    display: block;  
+    margin-right: 15px;
+    margin-left: 10px;
+    margin-bottom: 7px;
+}
+
+.tplantan h3{
+    color: #003128;
+    font-family: "Fredoka", sans-serif;
+    font-size: 25px;
+    margin: 0;
+}
+
+.footer-bottom {
+    padding: 0% 15%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .footer-bottom span{
+    color: #458C7F;
+    font-family: 'Space Grotesk', sans-serif;
+  }
+
+  .footer-bottom a{
+    color: #003128;
+    font-family: 'Space Grotesk', sans-serif;
+    text-decoration: none;
+  }
+
+menu{
+    display: none;
+}
+
+
+/* responsividade para celular */
+@media screen and (min-width: 300px) and (max-width: 500px) {
+
+    body {
+    background-image:url('assets/garden1.png');
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr 200px;
+    align-items: center;
+    justify-content: center;
+    }
+
+    nav {
+    display: none;
+    }
+
+    header {
+    width: 90%;
+    justify-content: space-between;
+    display: flex;
+    padding: 5% 5%;
+    }
+
+    .settings {
+    margin-left: auto;
+    }
+
+    .settings img{
+    margin-right: 4px;
+    width: 33px;
+    }
+
+    .section-home {
+    padding: 5% 0%;
+    }
+        
+    .logo img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    margin: 0 auto;
+    margin-top: 0px;
+    }
+        
+    .nome {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0% 20%;
+    }
+        
+    .nome> h2{
+    color: #ffffff;
+    font-family: "Alata", sans-serif;
+    font-size: 10px;
+    }
+
+    .section-suasplantas {
+        width: 360px;
+        display: flex;
+        margin: 0 auto;
+        margin-bottom: 5%;
+        position: relative;
+        justify-content: center;
+        }
+    
+        .minhasplantas {
+            overflow: none;
+        }
+    
+        .minhasplantas .image-list {
+            display: grid;
+            gap: 1.5%;
+            grid-template-columns: repeat(10, 1fr);
+            font-size: 0;
+            overflow: none;
+            scrollbar-width: none;
+            margin: 0 auto;
+        }
+    
+        .minhasplantas .image-list::-webkit-scrollbar {
+            display: none;
+        }
+    
+        .minhasplantas .slide-button {
+            display: none;
+        }
+    
+        .mp {
+            background-color: #ffffff;
+            border-radius: 20px;
+            width: 117px;
+            height: 145px;
+        }
+    
+    
+        .capa {
+        position: relative;
+        overflow: hidden;
+        }
+    
+        .capaimg img {
+        width: 117px;
+        margin-bottom: 7px;
+        }
+    
+        .coracaov img{
+        position: absolute;
+        bottom: 15%;
+        left: 4%;
+        width: 14px;
+        }
+    
+        .titulo {
+        display: flex;
+        }
+    
+        .iplanta img{
+        display: block;  
+        margin-right: 5px;
+        margin-left: 5px;
+        margin-bottom: 5px;
+        width: 14px;
+        }
+    
+        .tplanta h3{
+        color: #003128;
+        font-family: "Fredoka", sans-serif;
+        font-size: 10px;
+        margin: 0;
+        }
+    
+        .infos {
+        display: flex;
+        }
+    
+        .icones img{
+        display: block;  
+        margin-right: 5px;
+        margin-left: 5px;
+        margin-bottom: 5px;
+        width: 14px;
+        }
+    
+        .infosp h4{
+        color: #116152;
+        font-family: "Alata", sans-serif;
+        font-size: 7px;
+        margin: 0;
+        }
+
+    .section-novasplantas {
+    background-color: #ffffff;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    width: 90%;
+    margin: 0 auto;
+    padding: 2% 2%;
+    }
+        
+    .pesquisarn {
+    background-color: #FFD9E3;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    padding: 2% 5%;
+    }
+        
+    .lupa img {
+    display: block;  
+    margin-right: 10px;
+    width: 60%;
+    }
+        
+    .pesquisarnp h2{
+    color: #FD6288;
+    font-family: "Alata", sans-serif;
+    font-size: 15px;
+    margin: 0;
+    }
+
+    .novasplantas {
+    display: grid;
+    column-gap: 2%;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    }
+
+    .np {
+    margin-top: 10%;
+    margin-bottom: 10%;
+    }
+
+    .npu {
+    margin-top: 10%;
+    margin-bottom: 50%;
+    }
+        
+    .capan img {
+    width: 100%;
+    margin-bottom: 2px;
+    }
+
+    .titulon {
+    display: flex;
+    }
+
+    .coracaoc img{
+    display: block;  
+    margin-right: 7px;
+    margin-left: 7px;
+    margin-bottom: 7px;
+    width: 16px;
+    }
+
+    .tplantan h3{
+    color: #003128;
+    font-family: "Fredoka", sans-serif;
+    font-size: 12px;
+    margin: 0;
+    }
+
+.footer-bottom {
+    display: none;
+}
+
+
+    menu{
+    display: block;
+    background-color: #ffffff;
+    box-shadow: 0 5px 15px 0 #f45f84a6;
+    width: 90%;
+    padding: 2% 0%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+    position: fixed;
+    bottom: 0;
+    transform: translateX(-50%);
+    left: 50%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    }
+        
+    .icons {
+    grid-template-columns: 1fr 1fr 1fr;
+    }
+        
+    .icons img{
+    margin-right: 7%;
+    margin-left: 7%;
+    margin-bottom: 1%;
+    margin-top: 1%;
+    }
+
+}

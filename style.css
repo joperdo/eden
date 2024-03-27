@@ -89,90 +89,63 @@ header {
 .hidden {
     opacity: 0;
 }
-        
-.logo img{
+
+.fotoperfil img{
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 0 auto;
     margin-top: 5%;
 }
-        
-.nome {
+
+    .nome {
     display: flex;
     align-items: center;
     justify-content: center;
-    text-align: center;
-    padding: 0% 27%;
-}
-        
-.nome> h2{
+    }
+
+    .nome> h1{
     color: #ffffff;
-    font-family: "Alata", sans-serif;
-    font-size: 25px;
-}
+    font-family: "Fredoka", sans-serif;
+    font-size: 50px;
+    }
 
-.section-suasplantas {
-    width: 87%;
-    display: flex;
+    .section-suasplantas {
+    background-color: #ffffff;
+    border-top-left-radius: 60px;
+    border-top-right-radius: 60px;
+    width: 85%;
     margin: 0 auto;
-    margin-bottom: 2%;
-    position: relative;
-    justify-content: center;
+    padding: 2% 2%;
+    text-align: center;
     }
 
-    .minhasplantas {
-        overflow: auto;
+    .section-suasplantas hr{
+        border-top: 2px solid #FFD9E3;
+        
     }
 
-    .minhasplantas .image-list {
-        display: grid;
-        gap: 1%;
-        grid-template-columns: repeat(10, 1fr);
-        font-size: 0;
-        overflow: auto;
-        scrollbar-width: none;
-        margin: 0 auto;
-    }
-
-    .minhasplantas .image-list::-webkit-scrollbar {
+    .pesquisar {
         display: none;
     }
 
-    .minhasplantas .slide-button {
-        top: 50%;
-        height: 45px;
-        width: 45px;
-        color: #FD6288;
-        background: #FFD9E3;
-        font-size: 2.2rem;
-        cursor: pointer;
-        border: none;
-        outline: none;
-        position: absolute;
-        border-radius: 50%;
-        transform: translateY(-50%);
-    }
-
-    .minhasplantas .slide-button:hover {
-        background: #458C7F;
-    }
-
-    .minhasplantas .slide-button#prev-slide {
-        left: -70px;
-    }
-
-    .minhasplantas .slide-button#next-slide {
-        right: -70px;
+    .minhasplantas {
+    display: grid;
+    column-gap: 2%;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
     }
 
     .mp {
-        background-color: #ffffff;
-        border-radius: 25px;
-        width: 222px;
-        height: 270px;
+    margin-top: 10%;
+    margin-bottom: 10%;
     }
 
+    .mpu {
+    margin-top: 10%;
+    margin-bottom: 10%;
+    }
 
     .capa {
     position: relative;
@@ -180,15 +153,14 @@ header {
     }
 
     .capaimg img {
-    width: 222px;
-    margin-bottom: 10px;
+    width: 100%;
+    margin-bottom: 15px;
     }
 
     .coracaov img{
     position: absolute;
     bottom: 10%;
     left: 4%;
-    width: 27px;
     }
 
     .titulo {
@@ -197,16 +169,15 @@ header {
 
     .iplanta img{
     display: block;  
-    margin-right: 7px;
-    margin-left: 7px;
+    margin-right: 15px;
+    margin-left: 10px;
     margin-bottom: 7px;
-    width: 27px;
     }
 
     .tplanta h3{
     color: #003128;
     font-family: "Fredoka", sans-serif;
-    font-size: 15px;
+    font-size: 25px;
     margin: 0;
     }
 
@@ -216,94 +187,39 @@ header {
 
     .icones img{
     display: block;  
-    margin-right: 7px;
-    margin-left: 7px;
-    margin-bottom: 7px;
-    width: 27px;
+    margin-right: 15px;
+    margin-left: 10px;
+    margin-bottom: 10px;
     }
 
     .infosp h4{
     color: #116152;
     font-family: "Alata", sans-serif;
-    font-size: 12px;
+    font-size: 20px;
     margin: 0;
     }
 
-.section-novasplantas {
-    background-color: #ffffff;
-    border-top-left-radius: 60px;
-    border-top-right-radius: 60px;
-    width: 85%;
-    margin: 0 auto;
-    padding: 2% 2%;
-}
-        
-.pesquisarn {
+    .footer-bottom {
+        padding: 0% 15%;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+      }
+    
+      .footer-bottom span{
+        color: #458C7F;
+        font-family: 'Space Grotesk', sans-serif;
+      }
+    
+      .footer-bottom a{
+        color: #003128;
+        font-family: 'Space Grotesk', sans-serif;
+        text-decoration: none;
+      }
+    
+    menu{
     display: none;
-}
-
-.novasplantas {
-    display: grid;
-    column-gap: 2%;
-    grid-template-columns: 1fr 1fr 1fr;
-    justify-items: center;
-    align-items: center;
-}
-
-.np {
-    margin-top: 10%;
-    margin-bottom: 10%;
-}
-
-.npu {
-    margin-top: 10%;
-    margin-bottom: 10%;
-}
-        
-.capan img {
-    width: 100%;
-    margin-bottom: 15px;
-}
-
-.titulon {
-    display: flex;
-}
-
-.coracaoc img{
-    display: block;  
-    margin-right: 15px;
-    margin-left: 10px;
-    margin-bottom: 7px;
-}
-
-.tplantan h3{
-    color: #003128;
-    font-family: "Fredoka", sans-serif;
-    font-size: 25px;
-    margin: 0;
-}
-
-.footer-bottom {
-    padding: 0% 15%;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-  }
-
-  .footer-bottom span{
-    color: #458C7F;
-    font-family: 'Space Grotesk', sans-serif;
-  }
-
-  .footer-bottom a{
-    color: #003128;
-    font-family: 'Space Grotesk', sans-serif;
-    text-decoration: none;
-  }
-
-menu{
-    display: none;
-}
+    }
 
 
 /* responsividade para celular */
@@ -321,14 +237,19 @@ menu{
     }
 
     nav {
-    display: none;
-    }
+        display: none;
+        }
 
     header {
     width: 90%;
     justify-content: space-between;
     display: flex;
     padding: 5% 5%;
+    }
+
+    .logo img{
+    width: 72px;
+    margin-left: 4px;
     }
 
     .settings {
@@ -343,8 +264,8 @@ menu{
     .section-home {
     padding: 5% 0%;
     }
-        
-    .logo img{
+
+    .fotoperfil img{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -352,116 +273,20 @@ menu{
     margin: 0 auto;
     margin-top: 0px;
     }
-        
+
     .nome {
     display: flex;
     align-items: center;
     justify-content: center;
-    text-align: center;
-    padding: 0% 20%;
     }
-        
-    .nome> h2{
+
+    .nome> h1{
     color: #ffffff;
-    font-family: "Alata", sans-serif;
-    font-size: 10px;
+    font-family: "Fredoka", sans-serif;
+    font-size: 30px;
     }
 
     .section-suasplantas {
-        width: 360px;
-        display: flex;
-        margin: 0 auto;
-        margin-bottom: 5%;
-        position: relative;
-        justify-content: center;
-        }
-    
-        .minhasplantas {
-            overflow: none;
-        }
-    
-        .minhasplantas .image-list {
-            display: grid;
-            gap: 1.5%;
-            grid-template-columns: repeat(10, 1fr);
-            font-size: 0;
-            overflow: none;
-            scrollbar-width: none;
-            margin: 0 auto;
-        }
-    
-        .minhasplantas .image-list::-webkit-scrollbar {
-            display: none;
-        }
-    
-        .minhasplantas .slide-button {
-            display: none;
-        }
-    
-        .mp {
-            background-color: #ffffff;
-            border-radius: 20px;
-            width: 117px;
-            height: 145px;
-        }
-    
-    
-        .capa {
-        position: relative;
-        overflow: hidden;
-        }
-    
-        .capaimg img {
-        width: 117px;
-        margin-bottom: 7px;
-        }
-    
-        .coracaov img{
-        position: absolute;
-        bottom: 15%;
-        left: 4%;
-        width: 14px;
-        }
-    
-        .titulo {
-        display: flex;
-        }
-    
-        .iplanta img{
-        display: block;  
-        margin-right: 5px;
-        margin-left: 5px;
-        margin-bottom: 5px;
-        width: 14px;
-        }
-    
-        .tplanta h3{
-        color: #003128;
-        font-family: "Fredoka", sans-serif;
-        font-size: 10px;
-        margin: 0;
-        }
-    
-        .infos {
-        display: flex;
-        }
-    
-        .icones img{
-        display: block;  
-        margin-right: 5px;
-        margin-left: 5px;
-        margin-bottom: 5px;
-        width: 14px;
-        }
-    
-        .infosp h4{
-        color: #116152;
-        font-family: "Alata", sans-serif;
-        font-size: 7px;
-        margin: 0;
-        }
-
-    .section-novasplantas {
     background-color: #ffffff;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
@@ -469,29 +294,37 @@ menu{
     margin: 0 auto;
     padding: 2% 2%;
     }
-        
-    .pesquisarn {
+
+    .section-suasplantas a{
+        display: none;
+    }
+
+    .section-suasplantas hr{
+        display: none;
+    }
+
+    .pesquisar {
     background-color: #FFD9E3;
     border-radius: 50px;
     display: flex;
     align-items: center;
     padding: 2% 5%;
     }
-        
+
     .lupa img {
     display: block;  
     margin-right: 10px;
     width: 60%;
     }
-        
-    .pesquisarnp h2{
+
+    .pesquisarsp h2{
     color: #FD6288;
     font-family: "Alata", sans-serif;
     font-size: 15px;
     margin: 0;
     }
 
-    .novasplantas {
+    .minhasplantas {
     display: grid;
     column-gap: 2%;
     grid-template-columns: 1fr 1fr;
@@ -499,26 +332,38 @@ menu{
     align-items: center;
     }
 
-    .np {
+    .mp {
     margin-top: 10%;
     margin-bottom: 10%;
     }
 
-    .npu {
+    .mpu {
     margin-top: 10%;
-    margin-bottom: 50%;
+    margin-bottom: 60%;
     }
-        
-    .capan img {
+
+    .capa {
+    position: relative;
+    overflow: hidden;
+    }
+
+    .capaimg img {
     width: 100%;
     margin-bottom: 2px;
     }
 
-    .titulon {
+    .coracaov img{
+    position: absolute;
+    bottom: 10%;
+    left: 4%;
+    width: 16px;
+    }
+
+    .titulo {
     display: flex;
     }
 
-    .coracaoc img{
+    .iplanta img{
     display: block;  
     margin-right: 7px;
     margin-left: 7px;
@@ -526,17 +371,35 @@ menu{
     width: 16px;
     }
 
-    .tplantan h3{
+    .tplanta h3{
     color: #003128;
     font-family: "Fredoka", sans-serif;
     font-size: 12px;
     margin: 0;
     }
 
-.footer-bottom {
-    display: none;
-}
+    .infos {
+    display: flex;
+    }
 
+    .icones img{
+    display: block;  
+    margin-right: 7px;
+    margin-left: 7px;
+    margin-bottom: 7px;
+    width: 16px;
+    }
+
+    .infosp h4{
+    color: #116152;
+    font-family: "Alata", sans-serif;
+    font-size: 10px;
+    margin: 0;
+    }
+
+    .footer-bottom {
+        display: none;
+    }
 
     menu{
     display: block;
@@ -555,11 +418,11 @@ menu{
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     }
-        
+
     .icons {
     grid-template-columns: 1fr 1fr 1fr;
     }
-        
+
     .icons img{
     margin-right: 7%;
     margin-left: 7%;
