@@ -570,7 +570,7 @@
         "type": "image/png"
       }
   ],
-  "start_url": "/",
+  "start_url": "index.html",
   "theme_color": "#003131",
   "description": "Eden é um lugar para aqueles que estão começando a cultivar seu jardim. Encontrando informações sobre as necessidades de cada planta.",
   "lang": "pt",
