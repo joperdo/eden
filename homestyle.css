@@ -173,7 +173,6 @@ header {
         height: 270px;
     }
 
-
     .capa {
     position: relative;
     overflow: hidden;
@@ -498,16 +497,12 @@ menu{
     grid-template-columns: 1fr 1fr;
     justify-items: center;
     align-items: center;
+    margin-bottom: 25%;
     }
 
     .np {
     margin-top: 10%;
     margin-bottom: 10%;
-    }
-
-    .npu {
-    margin-top: 10%;
-    margin-bottom: 50%;
     }
         
     .capan img {

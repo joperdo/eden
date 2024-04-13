@@ -130,19 +130,17 @@ header {
     }
 
     .minhasplantas {
-    display: grid;
-    column-gap: 2%;
-    grid-template-columns: 1fr 1fr 1fr;
     justify-items: center;
     align-items: center;
     }
 
-    .mp {
-    margin-top: 10%;
-    margin-bottom: 10%;
+    .image-list {
+        display: grid;
+        column-gap: 2%;
+        grid-template-columns: 1fr 1fr 1fr;
     }
 
-    .mpu {
+    .mp {
     margin-top: 10%;
     margin-bottom: 10%;
     }
@@ -326,21 +324,20 @@ header {
     }
 
     .minhasplantas {
-    display: grid;
-    column-gap: 2%;
-    grid-template-columns: 1fr 1fr;
     justify-items: center;
     align-items: center;
+    margin-bottom: 25%;
+    }
+
+    .image-list {
+        display: grid;
+        column-gap: 2%;
+        grid-template-columns: 1fr 1fr;
     }
 
     .mp {
     margin-top: 10%;
     margin-bottom: 10%;
-    }
-
-    .mpu {
-    margin-top: 10%;
-    margin-bottom: 60%;
     }
 
     .capa {

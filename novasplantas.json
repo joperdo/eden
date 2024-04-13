@@ -1,0 +1,74 @@
+[
+    {
+        "capa": "assets/dioneia.png",
+        "title": "Dioneia",
+        "luz": "Luz solar direta",
+        "agua": "Uma vez ao dia"
+    },
+    {
+        "capa": "assets/pato.png",
+        "title": "Pato Voador",
+        "luz": "Luz solar direta",
+        "agua": "Uma vez ao dia"
+    },
+    {
+        "capa": "assets/homi.png",
+        "title": "Orquídea Homens nus",
+        "luz": "Luz solar direta",
+        "agua": "Uma vez ao dia"
+    },
+    {
+        "capa": "assets/shrek.png",
+        "title": "Orelha de Shrek",
+        "luz": "Luz solar direta",
+        "agua": "Uma vez ao dia"
+    },
+    {
+        "capa": "assets/alien.png",
+        "title": "Orquídea alienígena",
+        "luz": "Luz solar direta",
+        "agua": "Uma vez ao dia"
+    },
+    {
+        "capa": "assets/bezu.png",
+        "title": "Flor-do-beijo",
+        "luz": "Luz solar direta",
+        "agua": "Uma vez ao dia"
+    },
+    {
+        "capa": "assets/rabo.png",
+        "title": "Rabo de Macaco",
+        "luz": "Luz solar direta",
+        "agua": "Uma vez ao dia"
+    },
+    {
+        "capa": "assets/cara.png",
+        "title": "Cara de Macaco",
+        "luz": "Luz solar direta",
+        "agua": "Uma vez ao dia"
+    },
+    {
+        "capa": "assets/abelha.png",
+        "title": "Orquídea Abelha",
+        "luz": "Luz solar direta",
+        "agua": "Uma vez ao dia"
+    },
+    {
+        "capa": "assets/bebe.png",
+        "title": "Bebê-no-Berço",
+        "luz": "Luz solar direta",
+        "agua": "Uma vez ao dia"
+    },
+    {
+        "capa": "assets/pombo.png",
+        "title": "Orquídea-pombo",
+        "luz": "Luz solar direta",
+        "agua": "Uma vez ao dia"
+    },
+    {
+        "capa": "assets/darth.png",
+        "title": "Orquídea Darth Vader",
+        "luz": "Luz solar direta",
+        "agua": "Uma vez ao dia"
+    }
+]

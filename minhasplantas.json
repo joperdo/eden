@@ -1,0 +1,38 @@
+[
+    {
+        "capa": "assets/morango.png",
+        "title": "Morangueiro",
+        "luz": "Luz solar direta",
+        "agua": "Uma vez ao dia"
+    },
+    {
+        "capa": "assets/dancarina.png",
+        "title": "Menina Dançarina",
+        "luz": "Luz solar indireta",
+        "agua": "Uma vez ao dia"
+    },
+    {
+        "capa": "assets/ovo.png",
+        "title": "Planta Ovo",
+        "luz": "Luz solar indireta",
+        "agua": "Uma vez ao dia"
+    },
+    {
+        "capa": "assets/rosa.png",
+        "title": "Princesa Rosa",
+        "luz": "Luz solar indireta",
+        "agua": "Uma vez ao dia"
+    },
+    {
+        "capa": "assets/bela.png",
+        "title": "Beladona",
+        "luz": "Luz solar direta",
+        "agua": "Duas vezes por semana"
+    },
+    {
+        "capa": "assets/leao.png",
+        "title": "Boca-de-leão",
+        "luz": "Luz solar indireta",
+        "agua": "Uma vez ao dia"
+    }
+]
