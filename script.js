@@ -49,46 +49,45 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 
-// Função para obter acesso à mídia do usuário
-function getUserMedia(options, successCallback, failureCallback) {
-    // Verifica se o navegador suporta diferentes formas de acesso à mídia
-    var api = navigator.getUserMedia || navigator.webkitGetUserMedia ||
-      navigator.mozGetUserMedia || navigator.msGetUserMedia;
-    // Se uma API de acesso à mídia estiver disponível, ela é usada para obter o acesso
-    if (api) {
-      return api.bind(navigator)(options, successCallback, failureCallback);
-    }
-  }
-  
-  // Variável para armazenar o fluxo de vídeo capturado
-  var theStream;
-  
-  // Função para capturar uma foto do vídeo da câmera
-  function takePhoto() {
-    // Verifica se a API ImageCapture é suportada pelo navegador
-    if (!('ImageCapture' in window)) {
-      alert('ImageCapture is not available'); // Alerta se a API não for suportada
-      return;
-    }
-    
-    // Verifica se o fluxo de vídeo já foi capturado
-    if (!theStream) {
-      alert('Grab the video stream first!'); // Alerta para capturar o vídeo antes de tirar uma foto
-      return;
-    }
-    
-    // Cria um objeto ImageCapture com o primeiro track de vídeo do fluxo
-    var theImageCapturer = new ImageCapture(theStream.getVideoTracks()[0]);
-  
-    // Chama a função takePhoto() para capturar uma foto
-    theImageCapturer.takePhoto()
-      .then(blob => {
-        var theImageTag = document.getElementById("imageTag");
-        // Exibe a foto capturada no elemento <img> na página
-        theImageTag.src = URL.createObjectURL(blob);
+// Função para obter acesso à câmera e capturar uma foto
+function capturePhoto() {
+  // Opções para a captura de mídia
+  const mediaOptions = { video: true };
+
+  // Tenta obter o acesso à câmera
+  navigator.mediaDevices.getUserMedia(mediaOptions)
+      .then(function(stream) {
+          // Sucesso ao obter acesso à câmera
+          const track = stream.getVideoTracks()[0]; // Obtém o primeiro track de vídeo do fluxo
+          const imageCapture = new ImageCapture(track); // Cria um objeto ImageCapture com o track de vídeo
+
+          // Captura uma foto
+          imageCapture.takePhoto()
+              .then(function(blob) {
+                  // Sucesso ao capturar a foto
+                  const imageUrl = URL.createObjectURL(blob); // URL da foto capturada
+                  // Exibe a foto em algum lugar da página, por exemplo:
+                  const imgElement = document.createElement('img');
+                  imgElement.src = imageUrl;
+                  document.body.appendChild(imgElement);
+
+                  // Encerra o acesso à câmera após capturar a foto
+                  track.stop();
+              })
+              .catch(function(error) {
+                  // Ocorreu um erro ao capturar a foto
+                  console.error('Error capturing photo:', error);
+              });
       })
-      .catch(err => alert('Error: ' + err)); // Alerta em caso de erro durante a captura da foto
-  }
+      .catch(function(error) {
+          // Ocorreu um erro ao tentar obter acesso à câmera
+          console.error('Error accessing the camera:', error);
+      });
+}
+
+// Chamada da função para capturar uma foto
+capturePhoto();
+
   
 
 
