@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eden</title>
+    <link rel="icon" type="image/png" href="assets/icon.png">
     <meta name="description" content="Eden é um lugar para aqueles que estão começando a cultivar seu jardim. Encontrando informações sobre as necessidades de cada planta.">
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
@@ -292,13 +293,29 @@
 
     </main>
 
-    <menu>
+    <menu>   
+        <div class="modal-foto">
+            <div class="navfoto">
+                <button class="btnClose" onclick="closeModalFoto()"><h1>X</h1></button>
+                <h2>Adicione sua nova planta</h2>
+            </div>
+            <div class="filescamera">
+                <div class="files">
+                    <button class="openfiles()"><img src="assets/files.png"></button>
+                    <h2>Arquivos</h2>
+                </div>
+                <div class="camera">
+                    <button class="takePhoto()"><img src="assets/camera.png"></button>
+                    <h2>Câmera</h2>
+                </div>
+            </div>
+        </div>
         <div class="icons">
             <a href="home.html"><img src="assets/homestroke.png" alt="Ícone de casa"></a>
-            <a href=""><img src="assets/add.png" alt="Símbolo de +"></a>
+            <button class="btnOpenModalFoto" onclick="openModalFoto()"><img src="assets/add.png" alt="Símbolo de +"></button>
             <a href="index.html"><img src="assets/perfil.png" alt="Ícone de perfil"></a>
-            </div>
-        </menu>
+        </div>
+    </menu>
 
         
     <script>

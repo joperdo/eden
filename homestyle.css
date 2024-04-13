@@ -555,6 +555,7 @@ menu{
     left: 50%;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
+    z-index: 1000;
     }
         
     .icons {
@@ -567,5 +568,115 @@ menu{
     margin-bottom: 1%;
     margin-top: 1%;
     }
+
+    .icons button {
+        background: none;
+        border: none;
+        cursor: pointer;
+        
+    }
+
+    .icons button img{
+        margin: 0;
+    }
+
+    .modal-foto{
+        background-color: #FFFFFF;
+        box-shadow: 0 0 0 200vh #0d324788;
+        z-index: 2000;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        position: fixed;
+        width: 100%;
+        height: auto;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+    }
+
+    .active {
+        display: none;
+    }
+
+    .active .modal-foto{
+        animation: modal-foto .4s;
+        bottom: 0;
+    }
+
+    @keyframes modal-foto {
+        from {
+          opacity: 0;
+          transform: translate3d(0, -60px, 0);
+        }
+        to {
+          opacity: 1;
+          transform: translate3d(0, 0, 0);
+        }
+      }
+
+    .navfoto{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 3% 2%;
+    }
+
+    .navfoto button{
+        background: none;
+        border: none;
+        cursor: pointer;
+        position: absolute;
+        left: 2%;
+        top: 12%;
+        transform: translateY(-50%);
+    }
+
+    .navfoto button img{
+        margin: 0;
+    }
+
+    .navfoto h1{
+        font-family: "Fredoka", sans-serif;
+        color: #003128;
+        font-size: 25px;
+    }
+
+    .navfoto h2{
+        font-family: "Alata", sans-serif;
+        color: #003128;
+        font-size: 20px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .filescamera {
+        grid-template-columns: 1fr 1fr;
+        display: grid;
+        padding: 4% 17%;
+        justify-content: center;
+        margin-bottom: 2%;
+    }
+
+    .filescamera button{
+        background: #FFD9E3;
+        padding: 15px 15px;
+        border-radius: 20px;
+        border: none;
+        cursor: pointer;
+        outline: none;
+    }
+
+    .filescamera button img{
+        margin: 0;
+    }
+
+    .filescamera h2 {
+        font-family: "Alata", sans-serif;
+        color: #003128;
+        font-size: 15px;
+        text-align: center;
+    }
+
+
 
 }
