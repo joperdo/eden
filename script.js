@@ -46,6 +46,8 @@ document.addEventListener("DOMContentLoaded", function() {
   closeModalFoto();
 });
 
+
+
 // Chama a função para carregar os casos quando a página for carregada
 document.addEventListener("DOMContentLoaded", function() {
   loadMinhasPlantas();
@@ -138,3 +140,31 @@ function loadNovasPlantas() {
 }
 
 
+function takePhoto() {
+  if (!('ImageCapture' in window)) {
+      alert('ImageCapture não está disponível neste navegador.');
+      return;
+  }
+
+  navigator.mediaDevices.getUserMedia({ video: true })
+      .then(stream => {
+          const imageCapturer = new ImageCapture(stream.getVideoTracks()[0]);
+          return imageCapturer.takePhoto();
+      })
+      .then(blob => {
+          // Criar URL para a imagem capturada
+          const imageUrl = URL.createObjectURL(blob);
+          // Redirecionar para uma nova página HTML com a imagem
+          window.location.href = "form.html";
+      })
+      .catch(err => {
+          console.error('Erro ao capturar a foto:', err);
+          if (err.name === 'NotAllowedError') {
+              alert('Permissão para acessar a câmera não concedida.');
+          } else if (err.name === 'NotFoundError' || err.name === 'OverconstrainedError') {
+              alert('Não foi possível encontrar ou inicializar a câmera.');
+          } else {
+              alert('Erro ao capturar a foto: ' + err.message);
+          }
+      });
+}
