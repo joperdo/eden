@@ -140,6 +140,33 @@ function loadNovasPlantas() {
 }
 
 
+function openCamera() {
+  document.getElementById("captureInput").click();
+}
+
+document.getElementById("captureInput").addEventListener("change", function(event) {
+  const file = event.target.files[0];
+  const imageUrl = URL.createObjectURL(file);
+  window.location.href = "form.html?image=" + imageUrl;
+});
+
+
+document.addEventListener("DOMContentLoaded", function() {
+  const imgElement = document.getElementById("capturedImage");
+
+  // Verificar se a URL da imagem foi fornecida na query string
+  const urlParams = new URLSearchParams(window.location.search);
+  const imageUrl = urlParams.get('image');
+
+  if (imageUrl) {
+      // Definir a URL da imagem capturada como src do elemento de imagem
+      imgElement.src = imageUrl;
+  } else {
+      console.error("URL da imagem não fornecida.");
+  }
+});
+
+
 function takePhoto() {
   if (!('ImageCapture' in window)) {
       alert('ImageCapture não está disponível neste navegador.');
@@ -168,3 +195,7 @@ function takePhoto() {
           }
       });
 }
+
+
+
+

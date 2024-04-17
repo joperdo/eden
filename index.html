@@ -98,11 +98,12 @@
             </div>
             <div class="filescamera">
                 <div class="files">
-                    <button onclick="openfiles()"><img src="assets/files.png"></button>
+                    <input type="file" accept="image/*" capture="camera" id="captureInput" style="display: none;">
+                    <button onclick="openCamera()"><img src="assets/files.png"></button>
                     <h2>Arquivos</h2>
                 </div>
                 <div class="camera">
-                    <a href="form.html"><button onclick="takePhoto()"><img src="assets/camera.png"></button></a>
+                    <button onclick="takePhoto()"><img src="assets/camera.png"></button>
                     <h2>Câmera</h2>
                 </div>
             </div>
